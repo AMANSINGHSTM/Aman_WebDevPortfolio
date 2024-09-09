@@ -91,7 +91,7 @@ const Navbar = () => {
               </svg>
             </button>
 
-            {!isMenuOpen && (
+            {isMenuOpen && (
               <div className="absolute top-0 left-0 w-full">
                 <div className="p-5 bg-[var(--background-color)] text-[var(--text-color)] border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
@@ -130,7 +130,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="#about-me"
-                          onClick={handleScroll}
+                          onClick={handleMenuClick}
                           className="font-medium tracking-wide transition-colors duration-200 hover:text-[var(--text-color)]"
                         >
                           About Me
@@ -139,7 +139,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="#skills"
-                          onClick={handleScroll}
+                          onClick={handleMenuClick}
                           className="font-medium tracking-wide transition-colors duration-200 hover:text-[var(--text-color)]"
                         >
                           Skills
@@ -148,7 +148,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="#projects"
-                          onClick={handleScroll}
+                          onClick={handleMenuClick}
                           className="font-medium tracking-wide transition-colors duration-200 hover:text-[var(--text-color)]"
                         >
                           Projects
@@ -156,7 +156,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          onClick={handleScroll}
+                          onClick={handleMenuClick}
                           href="#contact-me"
                           className="font-medium tracking-wide transition-colors duration-200 hover:text-[var(--text-color)]"
                         >
