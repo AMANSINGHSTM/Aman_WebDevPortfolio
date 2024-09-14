@@ -36,7 +36,7 @@ const projects = [
       "TypeScript",
     ],
     github: "https://github.com/AMANSINGHSTM/podcast",
-    live: "https://podcast-q5hw6y58s-amansingh-s-projects.vercel.app",
+    live: "https://podcast-gamma-liart.vercel.app",
   },
   {
     title: "Food Delivery",
